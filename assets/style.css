@@ -77,6 +77,7 @@ main {
     align-items: center;
     justify-content: space-around;
     box-sizing: border-box;
+    box-shadow: 5px 5px var(--darkOlive);
 }
 
 #bio {
@@ -129,26 +130,51 @@ main {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    box-shadow: 5px 5px var(--darkApricot);
 }
 
 #mainProject {
     width: 80%;
-    background-color: var(--darkApricot);
+    height: 40%;
+    /* background-color: var(--darkApricot); */
+    background: url("https://picsum.photos/800/500");
+    border: 5px solid var(--darkApricot);
 }
 
 .projectsRow {
-    width: 100%;
+    width: 80%;
+    height: 50%%;
     display: flex;
     flex-direction: row;
-    align-items: space-around;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .otherProjects {
-    width: 30vw;
+    width: 30%;
     background-color: var(--darkApricot);
+    background-image: url("https://picsum.photos/500/300");
+    height: 20vh;
+    border: 5px solid var(--darkApricot);
  
 }
+
+.projectText {
+    display: block;
+    margin-top: 30%;
+    width: 50%;
+    color:var(--lightMint);
+    background-color: var(--darkApricot);
+}
+
+#mainProject:hover, .otherProjects:hover {
+    border: 5px solid var(--darkRed);
+}
+
+#mainProject:hover .projectText, .otherProjects:hover .projectText {
+    background-color: var(--darkRed);
+} 
+
 
 #contact {
     width: 100%;
@@ -208,4 +234,12 @@ main {
 
 .linkbox:hover {
     background-color: var(--lightOlive);
+}
+
+@media only screen and (max-width: 420px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+    
 }
