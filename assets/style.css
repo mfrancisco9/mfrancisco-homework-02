@@ -24,10 +24,12 @@
 body {
 
     font-family: Arial, Helvetica, sans-serif;
+    /* width: 100vw; */
+    max-width: 1920px;
 }
 
 header {
-    width: 100vw;
+    width: 1920px;
     height: 50px;
     background-color: var(--olive);
     box-shadow: 5px 5px var(--darkOlive);
@@ -59,11 +61,6 @@ header a:hover {
     background-color: var(--darkOlive);
 }
 
-
-main {
-    
-}
-
 #navlinks {
     height: 100%;
 }
@@ -80,12 +77,16 @@ main {
     box-shadow: 5px 5px var(--darkOlive);
 }
 
+#bio h1 {
+    color: var(--darkRed);
+}
+
 #bio {
     margin-top: 50px;
 }
 
 #bio, #contact-box {
-    width: 75%;
+    width: 800px;
     height: 75%;
     background-color: var(--darkMint);
     display: flex;
@@ -108,13 +109,14 @@ main {
 }
 
 #biopic {
-    width: 54%;
+    width: 700px;
     text-align: center;
     background-image: url(images/business.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     height: 400px;
     box-shadow: 5px 5px var(--darkOlive);
+    margin-bottom: 10px;
 }
 
 #biopic:hover {
@@ -123,27 +125,31 @@ main {
 
 #projects {
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background-image: linear-gradient(0deg, var(--lightApricot), var(--apricot));
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     box-shadow: 5px 5px var(--darkApricot);
 }
 
+#projects h1 {
+    color: var(--darkRed);
+}
+
 #mainProject {
-    width: 80%;
-    height: 40%;
+    width: 800px;
+    height: 30%;
     /* background-color: var(--darkApricot); */
     background: url("https://picsum.photos/800/500");
     border: 5px solid var(--darkApricot);
 }
 
 .projectsRow {
-    width: 80%;
-    height: 50%%;
+    width: 800px;
+    height: 40%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -165,6 +171,7 @@ main {
     width: 50%;
     color:var(--lightMint);
     background-color: var(--darkApricot);
+    padding: 15px;
 }
 
 #mainProject:hover, .otherProjects:hover {
@@ -187,7 +194,7 @@ main {
 }
 
 #contact-box {
-    width: 75%;
+    width: 800px;
     background-color: var(--darkMint);
     display: flex;
     flex-direction: column;
@@ -196,11 +203,15 @@ main {
 }
 
 #contactDiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 #contactBoxes {
-    width: 100%;
-    height: 100%;
+    width: 600px;
+    height: 600px;
     display: flex;
     flex-direction: row;
     align-items: space-around;
@@ -211,8 +222,8 @@ main {
 
 .linkbox {
     background-color: var(--darkOlive);
-    width: 15vw;
-    height: 15vw;
+    width: 225px;
+    height: 225px;
     margin: 10px 10px;
     text-align: center;
     display: flex;
@@ -237,6 +248,67 @@ main {
 }
 
 @media only screen and (max-width: 420px) {
+
+    #navbar {
+        width:420px;
+    }
+    
+    .myName h1 {
+        font-size: 18px;
+    }
+
+    #navlinks a {
+        font-size: 12px;
+        padding: 16px 4px;
+    }
+
+    #aboutText {
+        font-size: 12px;
+    }
+
+    #about, #projects, #contact {
+        width: 420px;
+    }
+
+    #projects, #bio {
+        width: 420px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mainProject {
+        width: 80%;
+        height: 30%;
+
+    }
+
+    .projectsRow {
+        width: 400px;
+        height: 50%;
+        flex-direction: column;
+    }
+
+    .otherProjects {
+        width: 60%;
+        height: 50%;
+    }
+    
+    #bio, #contact-box {
+        width: 400px;
+    }
+
+    #biopic {
+        width: 380px;
+    }
+    #contactBoxes {
+        width: 100%;
+        height: 60%;
+    }
+    .linkbox {
+        width: 160px;
+        height: 160px;
+    }
+    
 
 }
 
