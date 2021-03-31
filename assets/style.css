@@ -313,5 +313,16 @@ header a:hover {
 }
 
 @media only screen and (max-width: 768px) {
-    
+    #bio, #contact-box, #mainProject, .projectsRow {
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+    }
+
+    .otherProjects {
+        width: 400px;
+        height: 170px;
+        margin: 10px 0px;
+        
+    }
 }
