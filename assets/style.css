@@ -143,8 +143,20 @@ header a:hover {
     width: 800px;
     height: 30%;
     /* background-color: var(--darkApricot); */
-    background: url(images/project\ 1.JPG);
+    background: url(images/playlistproject.jpg);
     border: 5px solid var(--darkApricot);
+}
+
+#project2 {
+    background: url(images/project\ 1.JPG);
+}
+
+#project3 {
+    background: url(images/117320233-a512f880-ae51-11eb-9278-3cd9cdbddf62.gif);
+}
+
+#project4 {
+    background: url(images/weatherdash.jpg);
 }
 
 .projectsRow {
@@ -157,13 +169,14 @@ header a:hover {
 }
 
 .otherProjects {
-    width: 30%;
+    width: 25%;
     background-color: var(--darkApricot);
-    background-image: url("https://picsum.photos/500/300");
     height: 20vh;
     border: 5px solid var(--darkApricot);
  
 }
+
+
 
 .projectText {
     display: block;
